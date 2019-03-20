@@ -60,6 +60,8 @@ module.exports = function validateProfileInput(data) {
     }
   }
 
+  console.log(errors);
+
   return {
     errors,
     isValid: isEmpty(errors)
