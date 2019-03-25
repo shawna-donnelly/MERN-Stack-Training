@@ -99,6 +99,8 @@ class EditProfile extends Component {
   onSubmit = e => {
     e.preventDefault();
 
+    console.log(this.state.githubusername);
+
     const profileData = {
       handle: this.state.handle,
       company: this.state.company,
@@ -114,6 +116,8 @@ class EditProfile extends Component {
       youtube: this.state.youtube,
       instagram: this.state.instagram
     };
+
+    console.log(profileData);
 
     this.props.createProfile(profileData, this.props.history);
 
