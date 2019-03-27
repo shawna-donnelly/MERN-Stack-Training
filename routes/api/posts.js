@@ -49,6 +49,7 @@ router.post(
     // Check Validation
     if (!isValid) {
       // If any errors, send 400 with errors object
+      console.log("Not Valid");
       return res.status(400).json(errors);
     }
 
